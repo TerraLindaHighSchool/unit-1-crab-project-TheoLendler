@@ -19,7 +19,7 @@ public class StorkWorld extends World
     private void prepare()
     {
         Stork crab = new Stork();
-        addObject(crab,194,242);
+        addObject(crab,200,283);
         Baby worm = new Baby();
         addObject(worm,305,443);
         Baby worm2 = new Baby();
@@ -37,7 +37,7 @@ public class StorkWorld extends World
         Baby worm8 = new Baby();
         addObject(worm8,350,112);
         Dad lobster = new Dad();
-        addObject(lobster,316,350);
+        addObject(lobster,41,272);
         House house = new House();
         addObject(house,470,261);
         house.setLocation(484,279);

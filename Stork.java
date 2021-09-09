@@ -47,7 +47,6 @@ public class Stork extends Actor
       if(isTouching(Baby.class))
       {
           removeTouching(Baby.class);
-          Greenfoot.playSound("slurp.wav");
           
           // Winning the game
           if(getWorld().getObjects(Baby.class).size() == 0)
@@ -57,7 +56,11 @@ public class Stork extends Actor
               Greenfoot.stop();
           }
       }
-      
+      if(isTouching(House.class))
+      {
+          Greenfoot.playSound("au.wav");
+          Greenfoot.stop();
+      }
        if(isTouching(Dad.class))
       {
           Greenfoot.playSound("au.wav");

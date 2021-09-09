@@ -5,7 +5,7 @@ import greenfoot.*;
  * @author: Theo Lendler
  * @version: 8/26/21
  */
-public class Crab extends Actor
+public class Stork extends Actor
 {
     // This method repeats the following actions
     public void act()
@@ -44,13 +44,13 @@ public class Crab extends Actor
     // Checks for collisions with other objects  
     private void onCollision( )
     {
-      if(isTouching(Worm.class))
+      if(isTouching(Baby.class))
       {
-          removeTouching(Worm.class);
+          removeTouching(Baby.class);
           Greenfoot.playSound("slurp.wav");
           
           // Winning the game
-          if(getWorld().getObjects(Worm.class).size() == 0)
+          if(getWorld().getObjects(Baby.class).size() == 0)
           {
               Greenfoot.setWorld(new WinSplash());
               Greenfoot.playSound("fanfare.wav");
@@ -58,7 +58,7 @@ public class Crab extends Actor
           }
       }
       
-       if(isTouching(Lobster.class))
+       if(isTouching(Dad.class))
       {
           Greenfoot.playSound("au.wav");
           Greenfoot.stop();

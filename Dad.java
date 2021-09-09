@@ -6,13 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Lobster extends Actor
+public class Dad extends Actor
 {
      // This method repeats the following actions
     public void act()
     {
         move(3);
         turnAtEdge();
+        
 
     }
     // Moves the Crab

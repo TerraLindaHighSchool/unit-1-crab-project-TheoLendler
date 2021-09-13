@@ -32,7 +32,7 @@ public class Dad extends Actor
     {
         if(isTouching(House.class))
         {
-            turn(50);
+            turn(30);
         }
     
     }

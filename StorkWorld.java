@@ -37,7 +37,7 @@ public class StorkWorld extends World
         Baby worm8 = new Baby();
         addObject(worm8,350,112);
         Dad lobster = new Dad();
-        addObject(lobster,41,272);
+        addObject(lobster,52,204);
         House house = new House();
         addObject(house,470,261);
         house.setLocation(484,279);
@@ -88,5 +88,7 @@ public class StorkWorld extends World
         house5.setLocation(372,340);
         house5.setLocation(384,352);
         removeObject(house5);
+        house4.setLocation(455,496);
+        house4.setLocation(491,508);
     }
 }

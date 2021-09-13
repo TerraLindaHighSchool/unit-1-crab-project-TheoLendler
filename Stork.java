@@ -58,6 +58,7 @@ public class Stork extends Actor
       }
       if(isTouching(House.class))
       {
+          Greenfoot.setWorld(new LoseSplash());
           Greenfoot.playSound("au.wav");
           Greenfoot.stop();
       }

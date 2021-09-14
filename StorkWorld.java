@@ -90,5 +90,9 @@ public class StorkWorld extends World
         removeObject(house5);
         house4.setLocation(455,496);
         house4.setLocation(491,508);
+        Baby baby15 = new Baby();
+        addObject(baby15,333,328);
+        Baby baby16 = new Baby();
+        addObject(baby16,252,205);
     }
 }

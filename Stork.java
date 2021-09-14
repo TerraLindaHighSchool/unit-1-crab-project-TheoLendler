@@ -47,7 +47,6 @@ public class Stork extends Actor
       if(isTouching(Baby.class))
       {
           removeTouching(Baby.class);
-          
           // Winning the game
           if(getWorld().getObjects(Baby.class).size() == 0)
           {
